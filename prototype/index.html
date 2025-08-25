@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy AI Studio</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div id="app-container">
+        <header id="app-header">
+            <div class="logo">SpicyAI Studio</div>
+            <nav id="main-nav">
+                <a href="#" class="nav-link active" data-view="generator">Generator</a>
+                <a href="#" class="nav-link" data-view="twins">My Twins</a>
+                <a href="#" class="nav-link" data-view="gallery">Gallery</a>
+            </nav>
+            <div class="user-profile">
+                <span id="user-credits">Credits: 1250</span>
+                <div class="profile-icon">A</div>
+            </div>
+        </header>
+
+        <main id="app-main">
+
+            <!-- VIEW: TWIN MANAGEMENT -->
+            <section id="twins-view" class="view hidden">
+                <div class="view-header">
+                    <h1>My Digital Twins</h1>
+                    <button id="create-twin-btn" class="btn btn-primary">+ Create New Twin</button>
+                </div>
+                <div id="twin-list" class="grid-container"></div>
+            </section>
+            
+            <!-- VIEW: TWIN CREATION FLOW -->
+            <section id="twin-creation-view" class="view hidden">
+                 <div class="view-header">
+                    <h1>Create New Twin</h1>
+                    <button id="cancel-twin-creation" class="btn btn-secondary">Cancel</button>
+                </div>
+                <div class="twin-creation-flow">
+                    <p>Upload 10-20 high-quality photos to create a consistent character. This will cost <strong>150 credits</strong>.</p>
+                    <input type="text" id="new-twin-name" placeholder="Enter Twin Name...">
+                    <div class="upload-area">
+                        <p>Simulated Upload</p>
+                        <button id="simulate-upload-btn" class="btn">Select Photos</button>
+                    </div>
+                    <div id="upload-feedback" class="hidden"></div>
+                    <button id="start-training-btn" class="btn btn-primary" disabled>Start Training</button>
+                </div>
+            </section>
+
+            <!-- VIEW: GENERATOR -->
+            <section id="generator-view" class="view">
+                <div class="generator-container">
+                    <div class="generator-controls">
+                        <form id="generator-form">
+                            <div class="form-group">
+                                <label for="twin-select">1. Choose Your Twin</label>
+                                <select id="twin-select"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="prompt-input">2. Describe Your Scene</label>
+                                <textarea id="prompt-input" rows="5" placeholder="A photo of [twin], cinematic lighting, at a cafe..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="style-select">3. Select Style</label>
+                                <select id="style-select"></select>
+                            </div>
+                            <div class="form-group">
+                                <label>4. Aspect Ratio</label>
+                                <div class="radio-group" id="aspect-ratio-group">
+                                    <label><input type="radio" name="aspect-ratio" value="1:1"> 1:1</label>
+                                    <label><input type="radio" name="aspect-ratio" value="2:3" checked> 2:3</label>
+                                    <label><input type="radio" name="aspect-ratio" value="3:2"> 3:2</label>
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                <label class="toggle-label">
+                                    <span>Allow Unrestricted Content (NSFW)</span>
+                                    <input type="checkbox" class="toggle-switch">
+                                </label>
+                            </div>
+                            <div class="generation-footer">
+                                <p>Cost: <span id="generation-cost">5</span> Credits</p>
+                                <button type="submit" class="btn btn-primary btn-generate">Generate</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="generator-output">
+                        <div id="output-area">
+                            <div class="placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                                <p>Your creations will appear here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- VIEW: GALLERY -->
+            <section id="gallery-view" class="view hidden">
+                <div class="view-header">
+                    <h1>Content Gallery</h1>
+                </div>
+                <div id="gallery-grid" class="grid-container"></div>
+            </section>
+
+        </main>
+    </div>
+    <script src="assets/app.js"></script>
+</body>
+</html>
