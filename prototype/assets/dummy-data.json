@@ -1,0 +1,98 @@
+{
+  "twins": [
+    {
+      "id": "twin_01",
+      "name": "Aria",
+      "thumbnail": "https://placehold.co/512x512/E89D61/333333?text=Aria",
+      "status": "ready"
+    },
+    {
+      "id": "twin_02",
+      "name": "Jax",
+      "thumbnail": "https://placehold.co/512x512/6196E8/333333?text=Jax",
+      "status": "ready"
+    },
+    {
+      "id": "twin_03",
+      "name": "Cosplay Model",
+      "thumbnail": "https://placehold.co/512x512/cccccc/333333?text=Training",
+      "status": "training"
+    }
+  ],
+  "styles": [
+    {
+      "id": "style_photo",
+      "name": "Photorealistic"
+    },
+    {
+      "id": "style_anime",
+      "name": "Anime"
+    },
+    {
+      "id": "style_fantasy",
+      "name": "Fantasy Art"
+    },
+    {
+      "id": "style_digital",
+      "name": "Digital Painting"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "img_001",
+      "url": "https://placehold.co/512x768/E89D61/333333?text=Fantasy+Art",
+      "prompt": "a portrait of a beautiful warrior in steel armor, fantasy setting",
+      "twin_used": "Aria",
+      "style": "Fantasy Art"
+    },
+    {
+      "id": "img_002",
+      "url": "https://placehold.co/768x512/6196E8/333333?text=Photorealistic",
+      "prompt": "cyberpunk character in a neon-lit alleyway, cinematic",
+      "twin_used": "Jax",
+      "style": "Photorealistic"
+    },
+    {
+      "id": "img_003",
+      "url": "https://placehold.co/512x512/E86193/333333?text=Anime",
+      "prompt": "anime style portrait, cherry blossoms in the background",
+      "twin_used": "Aria",
+      "style": "Anime"
+    },
+    {
+      "id": "img_004",
+      "url": "https://placehold.co/512x768/8E61E8/333333?text=Digital+Art",
+      "prompt": "portrait of a character with glowing eyes, digital painting",
+      "twin_used": "Jax",
+      "style": "Digital Painting"
+    },
+    {
+      "id": "img_005",
+      "url": "https://placehold.co/512x768/E89D61/333333?text=Photorealistic",
+      "prompt": "photo of a person sitting in a cafe, soft window light",
+      "twin_used": "Aria",
+      "style": "Photorealistic"
+    },
+    {
+      "id": "img_006",
+      "url": "https://placehold.co/768x512/6196E8/333333?text=Fantasy+Art",
+      "prompt": "a rogue character hiding in the shadows of a medieval city",
+      "twin_used": "Jax",
+      "style": "Fantasy Art"
+    },
+    {
+      "id": "img_007",
+      "url": "https://placehold.co/512x512/E89D61/333333?text=Anime",
+      "prompt": "dynamic anime action scene, character mid-air",
+      "twin_used": "Aria",
+      "style": "Anime"
+    },
+    {
+      "id": "img_008",
+      "url": "https://placehold.co/512x768/6196E8/333333?text=Photorealistic",
+      "prompt": "a character in stylish streetwear, urban setting",
+      "twin_used": "Jax",
+      "style": "Photorealistic"
+    }
+  ]
+}
