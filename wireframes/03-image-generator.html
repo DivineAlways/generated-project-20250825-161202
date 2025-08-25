@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wireframe: Image Generator</title>
+    <link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-area">[LOGO]</div>
+        <div class="nav">
+            <span>Dashboard</span>
+            <span class="active">Generator</span>
+            <span>Gallery</span>
+            <span>Account</span>
+        </div>
+    </div>
+    <div class="main-layout full-width">
+        <div class="generator-layout">
+            <div class="generator-controls">
+                <h3>Image Generator</h3>
+
+                <div class="label">1. Select Your Twin</div>
+                <div class="select-box">[Aria (Ready) v]</div>
+
+                <div class="label">2. Write Your Prompt</div>
+                <div class="textarea-box">[photo of [twin_name], magical forest, detailed face...]</div>
+
+                <div class="label">3. Select Style</div>
+                <div class="select-box">[Photorealistic v]</div>
+
+                <div class="label">4. Advanced Options</div>
+                <div class="collapsible-box">
+                    <p>Aspect Ratio</p>
+                    <div class="grid-3">
+                        <div class="button small">[1:1]</div>
+                        <div class="button small active">[2:3]</div>
+                        <div class="button small">[3:2]</div>
+                    </div>
+                    <p>Allow NSFW Content</p>
+                    <div class="toggle-switch">[O--]</div>
+                </div>
+
+                <div class="cost-label">Cost: 5 Credits</div>
+                <div class="button full-width">[Generate]</div>
+
+            </div>
+            <div class="generator-output">
+                <div class="output-placeholder">[Your generations will appear here]</div>
+                <div class="output-image-grid">
+                   <div class="placeholder-box large">[Generated Image 1]</div>
+                   <div class="placeholder-box large">
+                        <div class="loading-spinner">[Loading...]</div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="notes-area-bottom">
+            <h4>Notes</h4>
+            <p>1. The layout is two-column: controls on the left, output on the right.</p>
+            <p>2. The controls follow a logical top-to-bottom flow (select subject, describe scene, choose style).</p>
+            <p>3. Advanced or less-common options are placed in a collapsible section to keep the UI clean.</p>
+            <p>4. Generation cost is clearly displayed before the user clicks 'Generate'.</p>
+            <p>5. The output area can show a placeholder, a loading state, or the final images.</p>
+        </div>
+    </div>
+</body>
+</html>
